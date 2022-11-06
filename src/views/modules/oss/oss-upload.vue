@@ -33,6 +33,7 @@
     methods: {
       init (id) {
         this.url = this.$http.adornUrl(`/sys/oss/upload?token=${this.$cookie.get('token')}`)
+        // console.log(this.url)
         this.visible = true
       },
       // 上传之前
